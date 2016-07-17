@@ -1,0 +1,16 @@
+$web-header-background: $color-solid-grosgrain;
+$web-header-color: $color-white;
+
+.web-header {
+	top: 0px; left: 0px;
+	background-color: $web-header-background;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	.web-title {
+		color: $web-header-color;
+		text-align: center;
+		font-family: $web-title-font-family;
+		font-size: $font-size-large;
+	}
+}

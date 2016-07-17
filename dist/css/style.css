@@ -1,0 +1,107 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import 'https://fonts.googleapis.com/css?family=Alegreya:400,400i,700|Secular+One';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #E8E7DC;
+  color: #333;
+  font-family: "Alegreya", serif;
+  font-size: 14px;
+  padding-top: 50px; }
+
+h2 {
+  font-size: 26px;
+  font-weight: bold; }
+
+.web-header {
+  top: 0px;
+  left: 0px;
+  background-color: #453221;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%; }
+  .web-header .web-title {
+    color: #fff;
+    text-align: center;
+    font-family: "Secular One", sans-serif;
+    font-size: 32px; }
+
+.art-container {
+  padding: 10px 0;
+  margin: 0px 10px; }
+  .art-container .articulo {
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #C8BEBE; }
+    .art-container .articulo .author-container {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black; }
+      .art-container .articulo .author-container .author-img {
+        margin-left: 10px;
+        width: 10%;
+        border-radius: 50%;
+        float: left; }
+      .art-container .articulo .author-container .info-author {
+        padding-top: 2px; }
+        .art-container .articulo .author-container .info-author .author-name {
+          padding-left: 6px;
+          font-weight: italic; }
+        .art-container .articulo .author-container .info-author .time-ago {
+          padding-left: 5px;
+          font-weight: italic; }
+    .art-container .articulo .visual-container .visual {
+      width: 100%;
+      border-bottom: 1px solid black; }
+    .art-container .articulo .text-container .art-headline {
+      text-align: right;
+      padding-top: 10px;
+      padding-right: 25px;
+      padding-bottom: 10px; }
+    .art-container .articulo .text-container .art-text {
+      padding: 0px 10px; }
