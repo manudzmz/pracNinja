@@ -4,10 +4,14 @@ $web-header-color: $color-white;
 .web-header {
 	top: 0px; left: 0px;
 	background-color: $web-header-background;
-	padding: 10px 0;
+	padding: 0px 0;
 	position: fixed;
 	width: 100%;
+	height: 60px;
 	.web-title {
+		padding-bottom: 0px;
+		padding-top: 15px;
+		margin: 0px;
 		color: $web-header-color;
 		text-align: center;
 		font-family: $web-title-font-family;
