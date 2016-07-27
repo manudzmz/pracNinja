@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/manudzmz/pracNinja#readme",
   "devDependencies": {
-   "autoprefixer": "^6.3.7",
+    "autoprefixer": "^6.3.7",
     "browser-sync": "^2.13.0",
     "browserify": "^13.0.1",
     "cssnano": "^3.7.3",
@@ -34,6 +34,7 @@
     "gulp.spritesmith": "^6.2.1"
   },
   "dependencies": {
+    "dotdotdot": "^1.7.0",
     "jquery": "^3.1.0"
   }
 }

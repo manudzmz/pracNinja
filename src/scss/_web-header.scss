@@ -4,14 +4,22 @@ $web-header-color: $color-white;
 .web-header {
 	top: 0px; left: 0px;
 	background-color: $web-header-background;
-	padding: 0px 0;
 	position: fixed;
 	width: 100%;
 	height: 60px;
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	z-index:1;
+	box-sizing: border-box;
+	@include if-is-tablet {
+		//box-sizing: border-box;   <-- Hace el mismo efecto que el calc
+		//width: calc(20% - 20px);
+		//text-align: center;
+		//padding: 10px;
+		height: 80px;
+	}
 	.web-title {
 		//padding-bottom: 0px;
 		//padding-top: 15px;
@@ -20,9 +28,11 @@ $web-header-color: $color-white;
 		color: $web-header-color;
 		//text-align: center;
 		font-family: $web-title-font-family;
-		font-size: $font-size-large;
-		margin-left: auto;
-		//float:left;
+		font-size: $font-size-title-tablet;
+		@include if-is-tablet {
+			font-size: $font-size-title-tablet + 10px;
+			padding-left: 35px;
+		}
 	}
 	.menu {
 	    //display: inline-block;
@@ -44,20 +54,43 @@ $web-header-color: $color-white;
 		// Ocultar segunda barra
 		.change .bar2 {
 	    	opacity: 0;
-		}
+			}
 		// Rotar tercera barra
 		.change .bar3 {
 	    	transform: rotate(45deg) translate(-8px, -8px) ;
 		}
+		@include if-is-tablet {
+			display: none;
+		}
 	}
-	.search-icon {
-		max-width: 27px;
-		max-height: 27px;
-		color: white;
-		margin-left: auto;
-		padding-right: 10px;
-		//padding-top: 15px;
-		//padding-left: 10px;
+	.search-div {
+		display: flex;
+		flex-direction: row;
+		.search-label {
+			color: white;
+			margin-right: 12px;
+			margin-top: 6px;
+			font-family: $web-title-font-family; 
+			display: none;
+			@include if-is-tablet {
+				display: inline;
+			}
+		}
+		.search-box{
+			margin-right: 10px;
+			display: none;
+			@include if-is-tablet {
+				display: inline;
+			}
+		}
+		.search-icon {
+			max-width: 27px;
+			max-height: 27px;
+			color: white;
+			padding-right: 25px;
+			//padding-top: 15px;
+			//padding-left: 10px;
+		}
 	}
 }
 

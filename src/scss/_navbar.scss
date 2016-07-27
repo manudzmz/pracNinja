@@ -1,0 +1,38 @@
+.nav-bar{
+	width: 100%;
+	background-color: $color-cancer;
+	position: fixed;
+	z-index:1;
+	margin-top: 20px;
+	display: none;
+	@include if-is-tablet {
+		display: inline;
+	}
+	.item-list{
+		display: flex;
+		flex-direction: row;
+		list-style-type: none;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid darken($color-cancer, 20%);
+		padding: 10px;
+		.item{
+			padding: 7px;
+			font-size: 20px;
+			a {
+				text-decoration: none;
+				color: $color-solid-grosgrain;
+			}
+		}
+		.first {
+			//padding-right: 35px;
+			border-left: 3px solid $color-syntactic;
+		}
+		.sign-up-in {
+			//background: red;
+			font-weight: bold;
+			font-size: 15px;
+			//padding-right: 30px;
+		}
+	}
+}

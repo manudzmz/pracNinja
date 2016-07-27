@@ -10,15 +10,31 @@
 	<header class="web-header">
 		<!-- <img src="src/img/menu-icon.png" alt="Menú de categorías"> -->
 		<div class="menu" onclick="myFunction(this)">
- 			<div class="bar1"></div>
- 			<div class="bar2"></div>
- 			<div class="bar3"></div>
+	 		<div class="bar1"></div>
+	 		<div class="bar2"></div>
+	 		<div class="bar3"></div>
 		</div>
 		<h1 class="web-title">UrBLOG</h1>
-		<img class="search-icon" src="src/img/search-icon-w.png" alt="Buscar">
+		<div class="search-div">
+			<label for="buscar" class="search-label">Buscar en la web</label>
+			<input id="buscar" class="search-box" type="search">
+			<img class="search-icon" src="src/img/search-icon-w.png" alt="Buscar">
+		</div>
 		<!-- <input type="search"> -->
-		<nav></nav>
 	</header>
+	<nav class="nav-bar" >
+		<ul class="item-list">
+			<li class="item"><a href="">Política</a></li>
+			<li class="item"><a href="">Economía</a></li>
+			<li class="item"><a href="">Sociedad</a></li>
+			<li class="item"><a href="">Deporte</a></li>
+			<li class="item"><a href="">Cultura</a></li>
+			<li class="item"><a href="">Ciencia</a></li>
+			<li class="item"><a href="">Todo</a></li>
+			<li class="item sign-up-in first"><a href="">LOGIN</a></li>
+			<li class="item sign-up-in"><a href="">REGISTRATE</a></li>
+		</ul>
+	</nav>
 	<div class="container">
 		<div class="art-container">
 			<article class="articulo">
@@ -35,7 +51,11 @@
 				</div>
 				<div class="text-container">
 					<h2 class="art-headline">Título 1</h2>
-					<p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ex, doloribus! Perspiciatis repellendus ad odit soluta voluptatem similique consequuntur, eveniet earum nisi qui consectetur totam officia voluptates perferendis voluptatibus aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deserunt atque sed dolores enim, at excepturi qui perferendis dicta rerum, vitae repudiandae cum eius sit culpa modi, eveniet consequatur est!</p>
+					<div id="wrapper">
+					<p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ex, doloribus! Perspiciatis repellendus ad odit soluta voluptatem similique consequuntur, eveniet earum nisi qui consectetur totam officia voluptates perferendis voluptatibus aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deserunt atque sed dolores enim, at excepturi qui perferendis dicta rerum, vitae repudiandae cum eius sit culpa modi, eveniet consequatur est! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> <!-- Doloremque odio ad, earum rerum cumque, assumenda, magnam architecto doloribus consequuntur optio, iste aperiam dolorem sequi amet harum. Incidunt delectus non libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi et magnam, commodi? Itaque, voluptatem, at optio facilis saepe expedita, voluptatibus quisquam illo cumque aperiam fugiat! Minus facere, dolores quod quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit modi iure illo consectetur aliquam ea aliquid molestiae reprehenderit, eaque maiores laudantium asperiores aperiam ullam explicabo ex consequatur, harum cum.
+					Ex modi placeat, fugiat saepe cupiditate maxime tempore dolore libero, deleniti ipsam minus eius dicta, voluptatibus impedit. Ab culpa iste maxime, dolorem reprehenderit nemo! Eius id aperiam tempora quia nostrum.
+					Expedita, fugiat beatae distinctio labore, vitae eum suscipit. Eligendi enim soluta odit libero, earum est incidunt consequuntur ab atque rerum eum adipisci dignissimos ratione quas eaque! Ducimus, similique consequatur ullam.</p> -->
+					</div>
 				</div>
 				<div class="foot-article">
 					<img class="like-icon" src="src/img/like-50.png" alt="Me gusta">
@@ -269,5 +289,6 @@
 		<p></p>
 		<a href=""></a>
 	</footer>
+	<script src="dist/js/app.js"></script>
 </body>
 </html>
