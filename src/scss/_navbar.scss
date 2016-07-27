@@ -15,24 +15,34 @@
 		justify-content: space-between;
 		align-items: center;
 		border-bottom: 1px solid darken($color-cancer, 20%);
-		padding: 10px;
 		.item{
-			padding: 7px;
 			font-size: 20px;
 			a {
 				text-decoration: none;
 				color: $color-solid-grosgrain;
+				display: inline-block;
+				padding: 15px 10px;
+			}
+			@include if-is-desktop {
+				a {
+					padding: 15px 35px;
+				}
+				a:hover {
+					background-color: $color-syntactic;
+					color: $color-dental;
+				}
+				a.sign:hover {
+					background-color: #FCF9B5;
+					color: black;
+				}
 			}
 		}
 		.first {
-			//padding-right: 35px;
 			border-left: 3px solid $color-syntactic;
 		}
 		.sign-up-in {
-			//background: red;
 			font-weight: bold;
 			font-size: 15px;
-			//padding-right: 30px;
 		}
 	}
 }
