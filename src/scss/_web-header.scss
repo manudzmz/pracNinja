@@ -72,6 +72,7 @@ $web-header-color: $color-white;
 			margin-top: 6px;
 			font-family: $web-title-font-family; 
 			display: none;
+			align-self: center;
 			@include if-is-tablet {
 				display: inline;
 			}
@@ -79,8 +80,12 @@ $web-header-color: $color-white;
 		.search-box{
 			margin-right: 10px;
 			display: none;
+			align-self: center;
 			@include if-is-tablet {
 				display: inline;
+			}
+			@include if-is-desktop {
+				margin-top: 15px;
 			}
 		}
 		.search-icon {
@@ -88,6 +93,7 @@ $web-header-color: $color-white;
 			max-height: 27px;
 			color: white;
 			padding-right: 25px;
+			align-self: center;
 			//padding-top: 15px;
 			//padding-left: 10px;
 		}

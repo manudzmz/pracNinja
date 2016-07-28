@@ -113,6 +113,10 @@ $article-background: $color-white;
 }
 
 
+div#wrapper {
+	word-wrap: break-word;
+}
+
 // .artist, .title {
 // 			display: block;
 // 			white-space: nowrap;
