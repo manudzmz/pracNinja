@@ -4,11 +4,21 @@ var utils = require('./utils.js');
 
 module.exports = {
 	load: function() {
-		debugger;
 		apiClient.list(function(response){
 			$('.comments-div').html('');
-
-			//if (response=null)
+			var numComments = response.length;
+			if (numComments == "") {
+				$(".comment-zone-title").text('NO EXISTEN COMENTARIOS PUBLICADOS');
+				$(".link-comentarios").text('Sin comentarios');  // Lo mismo para todos los articulos, se cambiara cuando se publiquen articulos y cada uno tenga 1 id
+				return false;
+			} else if (numComments == 1) {
+				$(".comment-zone-title").text('1    COMENTARIO');
+				$(".link-comentarios").text('1 comentario');   
+			} else {
+				var howManyComments = numComments + '    COMENTARIOS';
+				$(".comment-zone-title").text(howManyComments);
+				$(".link-comentarios").text(numComments + ' comentarios');
+			}
 			for (var i in response) {
 				var comment = response[i];
 
@@ -29,11 +39,9 @@ module.exports = {
 				html += '<p class="comment-text">' + utils.escapeHTML(comment.text) + '</p>';
 				html += '</article>';
 				$('.comments-div').append(html);
-				console.log('CARGADO', response);
 			}
 		}, function(response){
 			console.log('ERROR', response);
 		})
-
 	},
 }
