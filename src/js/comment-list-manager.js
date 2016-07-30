@@ -7,7 +7,7 @@ module.exports = {
 		apiClient.list(function(response){
 			$('.comments-div').html('');
 			var numComments = response.length;
-			if (numComments == "") {
+			if (numComments == 0) {
 				$(".comment-zone-title").text('NO EXISTEN COMENTARIOS PUBLICADOS');
 				$(".link-comentarios").text('Sin comentarios');  // Lo mismo para todos los articulos, se cambiara cuando se publiquen articulos y cada uno tenga 1 id
 				return false;
@@ -41,7 +41,7 @@ module.exports = {
 				$('.comments-div').append(html);
 			}
 		}, function(response){
-			console.log('ERROR', response);
+			$(".comment-zone-title").text('ERROR AL CARGAR LOS COMENTARIOS');
 		})
 	},
 }

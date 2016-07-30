@@ -11,7 +11,7 @@
 }
 
 @mixin if-is-phone {
-	@media all and (max-width: #{$mobile-width}) {
+	@media all and (max-width: #{$phone-width}) {
 		@content;
 	}
 }

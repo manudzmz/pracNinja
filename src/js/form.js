@@ -53,6 +53,7 @@ $('.comments-form').on('submit', function(){
 	apiClient.save(commentary, function(response){
 		$("form")[0].reset();  // borramos los campos del formulario
 		$("#name").focus();  // pongo el foco en el campo artist
+		$(".comment-zone-title").text('CARGANDO COMENTARIOS...');
 		commentListManager.load();
 		unsetLoading();
 	}, function(response){

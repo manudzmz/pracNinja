@@ -35,7 +35,7 @@ $web-header-color: $color-white;
 		}
 	}
 	.menu {
-	    //display: inline-block;
+	    display: inline-block;
 	    cursor: pointer;
 	    //float: left;
 	    padding-bottom: 9px;
@@ -47,21 +47,23 @@ $web-header-color: $color-white;
 	    	margin-top: 6px;
 	    	transition: 0.4s;
 		}
-		// Rotar primera barra
-		.change .bar1 {
-	    	transform: rotate(-45deg) translate(-9px, 6px) ;
-		}
-		// Ocultar segunda barra
-		.change .bar2 {
-	    	opacity: 0;
-			}
-		// Rotar tercera barra
-		.change .bar3 {
-	    	transform: rotate(45deg) translate(-8px, -8px) ;
-		}
 		@include if-is-tablet {
 			display: none;
 		}
+	}
+	// Rotar primera barra
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	   	transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+	// Ocultar segunda barra
+	.change .bar2 {
+	   	opacity: 0;
+	}
+	// Rotar tercera barra
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	   	transform: rotate(45deg) translate(-8px, -8px) ;
 	}
 	.search-div {
 		display: flex;
