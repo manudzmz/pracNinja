@@ -22,9 +22,10 @@ module.exports = {
 		});
 	},
 
-	// delete: function(songId, successCallback, errorCallback) {
+	// Posible delete para el futuro
+	// delete: function(, successCallback, errorCallback) {
 	// 	$.ajax({
-    //      url: '/api/comments/' + songId,
+    //      url: ,
 	// 		method: 'delete',
 	// 		success: successCallback,
 	// 		error: errorCallback

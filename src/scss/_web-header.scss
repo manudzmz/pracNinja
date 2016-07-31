@@ -14,19 +14,10 @@ $web-header-color: $color-white;
 	z-index:1;
 	box-sizing: border-box;
 	@include if-is-tablet {
-		//box-sizing: border-box;   <-- Hace el mismo efecto que el calc
-		//width: calc(20% - 20px);
-		//text-align: center;
-		//padding: 10px;
 		height: 80px;
 	}
 	.web-title {
-		//padding-bottom: 0px;
-		//padding-top: 15px;
-		//padding: 15px 60px 0 75px;
-		//margin: 0px;
 		color: $web-header-color;
-		//text-align: center;
 		font-family: $web-title-font-family;
 		font-size: $font-size-title-tablet;
 		@include if-is-tablet {
@@ -37,7 +28,6 @@ $web-header-color: $color-white;
 	.menu {
 	    display: inline-block;
 	    cursor: pointer;
-	    //float: left;
 	    padding-bottom: 9px;
 	    padding-left: 10px;
 	    .bar1, .bar2, .bar3 {

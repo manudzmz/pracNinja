@@ -21,6 +21,7 @@ function isOnScreen(element) {
 }
 
 
+//Descomentar linea siguiente para limpiar el Web Storage
 //localStorage.clear();
 
 $(window).on('scroll', function(){

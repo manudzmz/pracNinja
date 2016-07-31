@@ -1,12 +1,10 @@
 var $ = require("jquery");
 
-var avatars = $(".author-img");
-console.log("CONJUNTO DE IMAGENES => ", avatars);
-console.log("LONGITUD => ", avatars.length);
+// Seleccionamos los elementos que no tienen imagen de usuario definida
+// y le ponemos la imagen de placeholder en su lugar
+var missingAvatars = $(".author-img[src='']");
 
-for (var i in avatars) {
-	var imgAvatar = avatars[i];
-	if ($(imgAvatar).attr("src") == "") {
-		$(imgAvatar).attr("src", "images/avatar.png");
-	}
+for (var i = 0; i < missingAvatars.length; i++) {
+	var imgAvatar = missingAvatars[i];
+	$(imgAvatar).attr("src", "images/avatar.png");
 }

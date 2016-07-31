@@ -21,15 +21,6 @@ h2 {
 form {
 	padding-left: 10px;
 	padding-top: 15px;
-	//height: 100vh;
-	//display: flex;
-	//flex-direction: column;
-	//justify-content: center;
-	//position: absolute;
-	//background: $color-white;
-	//width: 50%;
-	//box-sizing: border-box;
-	//top: 0px;
 	@include if-is-tablet {
 		height: auto;
 		position: relative;
@@ -62,7 +53,6 @@ input, textarea {
 
 label, input, button {
 	display: block;
-	//width: 100%;
 	box-sizing: border-box;
 }
 

@@ -22,8 +22,6 @@
 	.texto-comentario{
 		@include if-is-tablet {
 			width: 45%;
-			//padding-left: 70px;
-			//padding-right: 40px;
 		}
 		@include if-is-desktop {
 			width: 320px;

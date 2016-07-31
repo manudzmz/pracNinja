@@ -6,7 +6,6 @@ var newCommmentButton = $('.comments-form button');
 var inputs = $(".comments-form input, .comments-form textarea");
 
 function setLoading() {
-	debugger;
 	$(inputs).attr("disabled", true);
 	newCommmentButton.text("Enviando comentario...").attr("disabled", true);
 }
@@ -19,6 +18,8 @@ function unsetLoading() {
 
 var avisoPalabras = $("#aviso");
 
+
+//Control de maximo de palabras del comentario
 $('#comment').on('input', function(){
 	var wordLen = 120;
 	var len = this.value.split(/[\s]+/); 
@@ -31,7 +32,7 @@ $('#comment').on('input', function(){
     }
 });
 
-// Al enviar formulario enviamos peticion AJAX para almacenar la cancion
+// Al enviar formulario enviamos peticion AJAX para almacenar el comentario
 $('.comments-form').on('submit', function(){
 	//	Validacion de inputs
 	var inputs = $("input");
@@ -56,7 +57,7 @@ $('.comments-form').on('submit', function(){
 	
 	apiClient.save(commentary, function(response){
 		$("form")[0].reset();  // borramos los campos del formulario
-		$("#name").focus();  // pongo el foco en el campo artist
+		$("#name").focus();  // pongo el foco en el campo nomber
 		$(".comment-zone-title").text('CARGANDO COMENTARIOS...');
 		commentListManager.load();
 		unsetLoading();
