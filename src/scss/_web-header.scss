@@ -68,6 +68,7 @@ $web-header-color: $color-white;
 	.search-div {
 		display: flex;
 		flex-direction: row;
+		margin-top: 10px;
 		.search-label {
 			color: white;
 			margin-right: 12px;
@@ -94,10 +95,9 @@ $web-header-color: $color-white;
 			max-width: 27px;
 			max-height: 27px;
 			color: white;
-			padding-right: 25px;
+			margin-right: 25px;
 			align-self: center;
-			//padding-top: 15px;
-			//padding-left: 10px;
+			margin-bottom: 5px;
 		}
 	}
 }

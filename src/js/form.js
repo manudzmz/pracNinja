@@ -53,7 +53,7 @@ $('.comments-form').on('submit', function(){
 	};
 
 	setLoading(); // deshabilito el formulario
-	debugger;
+	
 	apiClient.save(commentary, function(response){
 		$("form")[0].reset();  // borramos los campos del formulario
 		$("#name").focus();  // pongo el foco en el campo artist

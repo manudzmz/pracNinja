@@ -1,7 +1,8 @@
+@import 'responsive-utilities';
 @import 'reset';
 @import 'https://fonts.googleapis.com/css?family=Alegreya:400,400i,700|Secular+One';
+@import 'sprite';
 @import 'variables';
-@import 'responsive-utilities';
 @import 'html-tags';
 @import 'web-header';
 @import 'navbar';
@@ -10,6 +11,4 @@
 @import 'comments';
 @import 'comments-form-blocks';
 @import 'footer';
-
-
-//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@include sprites($spritesheet-sprites);

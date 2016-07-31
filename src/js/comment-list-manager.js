@@ -22,11 +22,6 @@ module.exports = {
 			for (var i in response) {
 				var comment = response[i];
 
-				// var coverUrl = song.cover_url || "";
-				// if (coverUrl == "") {
-				// 	coverUrl = "src/img/disc-placeholder.jpg";
-				// }
-
 				var id = comment.id || "";
 
 				var name = comment.name || "";

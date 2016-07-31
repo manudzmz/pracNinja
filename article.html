@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Web articulos</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="theme-color" content="#9ED6E1">
 	<link rel="stylesheet" type="text/css" href="dist/css/style.css">
 </head>
 <body>
 	<header class="web-header">
-		<!-- <img src="src/img/menu-icon.png" alt="Menú de categorías"> -->
 		<div class="menu">
 	 		<div class="bar1"></div>
 	 		<div class="bar2"></div>
@@ -18,31 +18,17 @@
 		<div class="search-div">
 			<label for="buscar" class="search-label">Buscar en la web</label>
 			<input id="buscar" class="search-box" type="search">
-			<img class="search-icon" src="src/img/search-icon-w.png" alt="Buscar">
+			<span class="search-icon search-icon-w" alt="Buscar"></span>
 		</div>
-		<!-- <input type="search"> -->
 	</header>
-	<!-- <nav class="nav-bar" >
-		<ul class="item-list">
-			<li class="item"><a href="#">Política</a></li>
-			<li class="item"><a href="#">Economía</a></li>
-			<li class="item"><a href="#">Sociedad</a></li>
-			<li class="item"><a href="#">Deporte</a></li>
-			<li class="item"><a href="#">Cultura</a></li>
-			<li class="item"><a href="#">Ciencia</a></li>
-			<li class="item"><a href="#">Todo</a></li>
-			<li class="item sign-up-in first"><a class="sign" href="">LOGIN</a></li>
-			<li class="item sign-up-in first"><a class="sign" href="">REGISTRATE</a></li>
-		</ul>
-	</nav> -->
 
 	<nav class="nav-bar ui-element">
 		<ul class="item-list">
 			<div class="nav-block block-one">
-			<li class="item"><a href="index.html">Política</a></li>
+			<li class="item"><a href="#">Política</a></li>
 			<li class="item"><a href="#">Economía</a></li>
 			<li class="item"><a href="#">Sociedad</a></li>
-			<li class="item"><a href="article.html">Deporte</a></li>
+			<li class="item"><a href="#">Deporte</a></li>
 			<li class="item"><a href="#">Cultura</a></li>
 			<li class="item"><a href="#">Ciencia</a></li>
 			<li class="item"><a href="#">Todo</a></li>
@@ -54,23 +40,23 @@
 		</ul>
 	</nav>
 
-	<div class="container">
+	<div id="comienzo" class="container">
 		<div class="art-container">
 				<article class="articulo" data-id="3">
 					<div class="author-container">
-						<img class="author-img" src="images/avatar.png" alt="">
+						<img class="author-img" src="" alt="">
 						<div class="info-author">
 							<div>
 								<span class="author-name">Anónimo Anónimez</span>
 							</div>
 							<div>
-								<span class="time-ago">Hace 2 días</span>
+								<time class="timeago" datetime="2016-07-30T19:23:00">30 Julio 2016, 19:23</time>
 							</div>
 
 						</div>
 					</div>
 					<div class="visual-container detail">
-						<img class="visual" src="images/cachorro.jpg" alt="">
+						<img class="visual" src="images/cachorro-642px.jpg" srcset="images/cachorro-214px.jpg 214w, images/cachorro-428px.jpg 428w, images/cachorro-642px.jpg 642w" alt="Imagen">
 					</div>
 					<div class="text-container">
 						<h2 class="art-headline">Título 3</h2>
@@ -79,7 +65,7 @@
 						Expedita, fugiat <a href="#">beatae distinctio labore</a>, vitae eum suscipit. Eligendi enim soluta odit libero, earum est incidunt consequuntur ab atque rerum eum adipisci dignissimos ratione quas eaque! Ducimus, similique consequatur ullam.</p>
 					</div>
 					<div class="foot-article">
-						<img class="like-icon" src="src/img/like-50.png" alt="Me gusta">
+						<span class="like-icon like-50" alt="Me gusta"></span>
 						<a class="link-comentarios" href="#"></a>
 					</div>
 				</article>
