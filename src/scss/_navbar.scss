@@ -4,11 +4,9 @@
 	position: fixed;
 	z-index:1;
 	margin-top: 20px;
-	//display: none;
 	@include if-is-phone {
 		background-color: transparent;
 		margin: 0 auto;
-		//height: calc(100vh - 97px);
 		height: 100%;
 		position: static;
 	}
@@ -27,7 +25,6 @@
 			flex-direction: column;
 			justify-content: space-around;
 			border-bottom: none;
-			//list-style-type: disc;
 		}
 		.nav-block{
 			display: flex;
@@ -52,7 +49,6 @@
 				font-weight: bold;
 				font-size: 15px;
 				@include if-is-phone {
-					font-weight: bold;
 					font-size: 25px;
 					border: 1px solid darken($color-cancer, 20%);
 				}
@@ -91,11 +87,9 @@
 			@include if-is-phone {
 				display: flex;
 				flex-direction: row;
-				//list-style-type: none;
 				justify-content: space-around;
 				padding-top: 40px;
 				padding-bottom: 20px;
-				//align-items: center;
 			}	
 		}	
 	}

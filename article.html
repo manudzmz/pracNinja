@@ -39,7 +39,7 @@
 	<nav class="nav-bar ui-element">
 		<ul class="item-list">
 			<div class="nav-block block-one">
-			<li class="item"><a href="#">Política</a></li>
+			<li class="item"><a href="index.html">Política</a></li>
 			<li class="item"><a href="#">Economía</a></li>
 			<li class="item"><a href="#">Sociedad</a></li>
 			<li class="item"><a href="article.html">Deporte</a></li>
@@ -56,7 +56,7 @@
 
 	<div class="container">
 		<div class="art-container">
-				<article class="articulo">
+				<article class="articulo" data-id="3">
 					<div class="author-container">
 						<img class="author-img" src="images/avatar.png" alt="">
 						<div class="info-author">
@@ -74,9 +74,9 @@
 					</div>
 					<div class="text-container">
 						<h2 class="art-headline">Título 3</h2>
-						<p class="art-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ex, doloribus! Perspiciatis repellendus ad odit soluta voluptatem similique consequuntur, eveniet earum nisi qui consectetur totam officia voluptates perferendis voluptatibus aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deserunt atque sed dolores enim, at excepturi qui perferendis dicta rerum, vitae repudiandae cum eius sit culpa modi, eveniet consequatur est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br>Doloremque odio ad, earum rerum cumque, assumenda, magnam architecto doloribus consequuntur optio, iste aperiam dolorem sequi amet harum. Incidunt delectus non libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi et magnam, commodi? Itaque, voluptatem, at optio facilis saepe expedita, voluptatibus quisquam illo cumque aperiam fugiat! Minus facere, dolores quod quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit modi iure illo consectetur aliquam ea aliquid molestiae reprehenderit, eaque maiores laudantium asperiores aperiam ullam explicabo ex consequatur, harum cum.<br><br>
+						<p class="art-text-extended">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ex, doloribus! Perspiciatis repellendus ad odit soluta voluptatem similique consequuntur, eveniet earum nisi qui consectetur totam officia voluptates perferendis voluptatibus aut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero deserunt atque sed dolores enim, at excepturi qui perferendis dicta rerum, vitae repudiandae cum eius sit culpa modi, eveniet consequatur est! <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit. <br><br>Doloremque odio ad, earum rerum cumque, assumenda, magnam architecto doloribus consequuntur optio, iste aperiam dolorem sequi amet harum. Incidunt delectus non libero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi et magnam, commodi? Itaque, voluptatem, at <em>optio facilis saepe expedita</em>, voluptatibus quisquam illo cumque aperiam fugiat! Minus facere, dolores quod quaerat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae impedit modi iure illo consectetur aliquam ea aliquid molestiae reprehenderit, eaque maiores laudantium asperiores aperiam ullam explicabo ex consequatur, harum cum.<br><br>
 						Ex modi placeat, fugiat saepe cupiditate maxime tempore dolore libero, deleniti ipsam minus eius dicta, voluptatibus impedit. Ab culpa iste maxime, dolorem reprehenderit nemo! Eius id aperiam tempora quia nostrum.<br><br>
-						Expedita, fugiat beatae distinctio labore, vitae eum suscipit. Eligendi enim soluta odit libero, earum est incidunt consequuntur ab atque rerum eum adipisci dignissimos ratione quas eaque! Ducimus, similique consequatur ullam.</p>
+						Expedita, fugiat <a href="#">beatae distinctio labore</a>, vitae eum suscipit. Eligendi enim soluta odit libero, earum est incidunt consequuntur ab atque rerum eum adipisci dignissimos ratione quas eaque! Ducimus, similique consequatur ullam.</p>
 					</div>
 					<div class="foot-article">
 						<img class="like-icon" src="src/img/like-50.png" alt="Me gusta">
@@ -85,7 +85,7 @@
 				</article>
 		</div>
 	</div>
-	<section class="comments-list">
+	<section id="comments-area" class="comments-list">
 		<div class="comment-zone-title"></div>
 		<div class="comments-div">
 			<!-- <article class="comment">
@@ -100,29 +100,32 @@
 	</section>
 	<form class="comments-form" novalidate>
 		<div class="campos-form" >
-		<div class="datos-personales">
-		<div>
-			<label for="name">Nombre</label>
-			<input type="text" id="name" name="name" placeholder="Nombre" required>
-		</div>
+			<div class="datos-personales">
+				<div>
+					<label for="name">Nombre</label>
+					<input type="text" id="name" name="name" placeholder="Nombre" required>
+				</div>
 
-		<div>
-			<label for="apellidos">Apellidos</label>
-			<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
-		</div>
+				<div>
+					<label for="apellidos">Apellidos</label>
+					<input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+				</div>
 
-		<div>
-			<label for="mail">Correo electrónico</label>
-			<input type="email" id="mail" name="mail" required>
-		</div>
-		</div>
+				<div>
+					<label for="mail">Correo electrónico</label>
+					<input type="email" id="mail" name="mail" required>
+				</div>
+			</div>
 
-		<div class="texto-comentario">
-		<div>
-			<label for="comment">Comentario</label>
-			<textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
-		</div>
-		</div>
+			<div class="texto-comentario">
+				<div>
+					<label for="comment">Comentario</label>
+					<textarea name="comment" id="comment" cols="30" rows="10" required></textarea>
+				</div>
+				<div class="aviso-txtarea">
+					<span id="aviso">¡Has superado el límite de 120 palabras!</span>
+				</div>
+			</div>
 		</div>
 		<button>Enviar comentario</button>
 	</form>

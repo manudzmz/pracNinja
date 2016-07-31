@@ -22,9 +22,9 @@ function isOnScreen(element) {
 
 
 $(window).on('scroll', function(){
-	if (isOnScreen(comentarios) && !cargado) {
-		$(".comment-zone-title").text('CARGANDO COMENTARIOS...');
-		commentListManager.load();
-		cargado = true;
-	}
+  if (isOnScreen(comentarios) && !cargado) {
+    $(".comment-zone-title").text('CARGANDO COMENTARIOS...');
+  	commentListManager.load();
+  	cargado = true;
+  }
 });

@@ -73,6 +73,7 @@ button {
 	padding: 10px;
 	font-size: $font-size-base;
 	border-radius: 5px;
+	cursor: pointer;
 	&:focus {
 		outline-color: $color-cancer;
 		background: $color-grey;

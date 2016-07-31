@@ -17,15 +17,19 @@ function unsetLoading() {
 }
 
 
- // $('#comment').on('change', function(){
-// 	var wordLen = 120;
-// 	var len = this.value.split(/[\s]+/); 
-//     if(len.length > wordLen){
-//     	avisoPalabras.style.display = 'block';
-//     } else {
-//     	avisoPalabras.style.display = 'none';
-//     }
-// });
+var avisoPalabras = $("#aviso");
+
+$('#comment').on('input', function(){
+	var wordLen = 120;
+	var len = this.value.split(/[\s]+/); 
+    if(len.length > wordLen){
+    	avisoPalabras.css("display", "block");
+    	newCommmentButton.text("Abrevie su comentario").attr("disabled", true);
+    } else {
+    	avisoPalabras.css("display", "none");
+    	newCommmentButton.text("Enviar comentario").attr("disabled", false);
+    }
+});
 
 // Al enviar formulario enviamos peticion AJAX para almacenar la cancion
 $('.comments-form').on('submit', function(){

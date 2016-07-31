@@ -39,7 +39,7 @@ $article-background: $color-white;
 						font-weight: italic;
 						color: $color-syntactic;
 					}
-					.time-ago {
+					.time-ago, time {
 						padding-left: 5px;
 						font-weight: italic;
 					}
@@ -51,8 +51,14 @@ $article-background: $color-white;
 			    overflow: hidden;
 				.visual {
 					//padding-left: 8px;
+					// height: 250px;
+					// width: 500px;
 					width: 100%;
 					border-bottom: 1px solid black;
+				}
+				.visual.video {
+					height: 100%;
+					//width: 100%;
 				}
 			}
 			.visual-container.detail {
@@ -63,7 +69,7 @@ $article-background: $color-white;
 				.art-headline {
 					text-align: left;
 					padding-top: 10px;
-					padding-left: 10px;
+					padding-left: 15px;
 					padding-bottom: 10px;
 					font-size: $font-size-h2;
 					white-space: nowrap;
@@ -75,8 +81,46 @@ $article-background: $color-white;
 					}
 				}
 				.art-text {
-					padding: 0px 10px;
+					padding: 0px 15px;
 					font-size: $font-size-base;
+					height: $font-size-base*$line-height*$lines-to-show; 
+					line-height: $line-height;
+					-webkit-line-clamp: $lines-to-show;
+  					-webkit-box-orient: vertical;
+ 					overflow: hidden;
+ 					text-overflow: ellipsis;
+ 					display: block; /* Fallback for non-webkit */
+  					display: -webkit-box;
+ 					//white-space: nowrap;
+					@include if-is-tablet {
+						font-size: $font-size-large;
+						height: $font-size-large*$line-height*$lines-to-show; 
+					}
+				}
+				.art-text-extended {
+					padding: 0px 15px;
+					font-size: $font-size-base;		
+					line-height: $line-height;
+					@include if-is-tablet {
+						font-size: $font-size-large;
+					}
+					strong {
+						font-weight: bold;
+					}
+					em {
+						font-style: italic;
+					}
+					a {
+						color: darken($color-cancer, 30%);
+						text-decoration: none;
+					}
+				}
+				.read-more {
+					padding-left: 15px;
+					font-size: $font-size-base;
+					color: darken($color-cancer, 30%);
+					text-decoration: none;
+					margin-top: 925px;
 					@include if-is-tablet {
 						font-size: $font-size-large;
 					}
@@ -93,6 +137,7 @@ $article-background: $color-white;
 					padding-left: 10px;
 					//background-color: red;
 					float: left;
+					cursor: pointer;
 				}
 				.link-comentarios {
 					padding-right: 20px;
