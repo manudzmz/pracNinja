@@ -7,3 +7,4 @@ require("./user-img.js");
 require("./time.js");
 require("./form.js");
 require("./like.js");
+require("./time-elapsed.js");

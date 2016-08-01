@@ -1,13 +1,44 @@
 var $ = require("jquery");
-var timeago = require("timeago");
+//var timeago = require("timeago");
+var timeElapsed = require("./time-elapsed.js");
+
+var fechas = $('time');  // Lo dejamos fuera del bucle porque al ser estática la pagina no habra articulos nuevos
+// console.log("$('time') => ", $('time'));
+
+// console.log("fechas[1] => ", fechas[1]);
+// console.log("$(fechas[1]).html() => ", $(fechas[1]).html());
+// console.log("$(fechas[1]).attr('datetime') => ", $(fechas[1]).attr('datetime'));
 
 
-
-$(document).ready(function() {
-	setTimeout(function(){
- 		$("time.timeago").timeago();
-	}, 1000); 
+$(document).ready(function(){
+    setTimeout(function(){
+	    //var x = timeElapsed.calcularTiempo("2016-08-01 17:15:50");
+       // console.log("TIEMPO TRANSCURRIDO => ", x);
+       for (var i = 0; i < fechas.length; i++) {
+       		var fechaPost = $(fechas[i]).attr('datetime');
+       		$(fechas[i]).html("");
+       		$(fechas[i]).html(timeElapsed.calcularTiempo(fechaPost));
+       }
+    }, 1000); 
 });
+
+// $(window).load(function(){
+//     setTimeout(function(){
+// 	    //var x = timeElapsed.calcularTiempo("2016-08-01 17:15:50");
+//        // console.log("TIEMPO TRANSCURRIDO => ", x);
+//        for (var i = 0; i < fechas.length; i++) {
+//        		var fechaPost = $(fechas[i]).attr('datetime');
+//        		$(fechas[i]).html("");
+//        		$(fechas[i]).html(timeElapsed.calcularTiempo(fechaPost));
+//        }
+//     }, 1000); 
+// });
+
+
+// 	setTimeout(function(){
+//  		$("time.timeago").timeago();
+// 	}, 1000); 
+// });
 
 // var date = new Date(2016, 06, 30, 17, 33, 00);
 

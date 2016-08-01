@@ -1,5 +1,6 @@
 var $ = require('jquery');
 commentListManager = require("./comment-list-manager");
+var timeElapsed = require("./time-elapsed");
 
 // cargamos los comentarios cuando sean visibles en pantalla
 
