@@ -59,7 +59,7 @@ module.exports = {
 			        month = "Diciembre";
 			}
 
-			resultado = post.getDate() + ' de ' + month + ' de ' + post.getFullYear();
+			resultado = post.getDate() + ' de ' + month + ' de ' + post.getFullYear() + ' a las ' + post.getHours() + ':' + post.getMinutes();
 
 		} else if (days >= 1 && days < 7) {
 
