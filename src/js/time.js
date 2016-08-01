@@ -6,7 +6,6 @@ var fechas = $('time');  // Lo dejamos fuera del bucle porque al ser estática l
 $(document).ready(function(){
     setInterval(function(){
        for (var i = 0; i < fechas.length; i++) {
-       		debugger;
        		var fechaPost = $(fechas[i]).attr('datetime');
        		$(fechas[i]).html("");
        		$(fechas[i]).html(timeElapsed.calcularTiempo(fechaPost));
